@@ -23,8 +23,6 @@ namespace Testqneuron{
         
         let num_output = structure[depth - 1]; //1
 
-        //TODO: send in normalized weights and biases
-        //ignoring the part of the code that does not initialize using Hadamards for now
         use qs = Qubit[qubit_no];
         let end = (ancilla_qubit_no + first_layer_size) - 1; //1
         for qubit in ancilla_qubit_no .. end {
